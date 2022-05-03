@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style/font.css">
+    <link rel="stylesheet" href="src/style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="#" class="form">
+            <section class="hero">
+                <h1 class="title">Profile</h1>
+                    <div class="img-profile">
+                        <img src="src/img/image.jpg" alt="">
+                    </div>
+                    <ul class="hero-list">
+                        <li class="hero-list-item">
+                            <label for="" class="img-info">Up to 1 MB (300x300 px)</label>
+                            <div class="input-holder camera-box">
+                                <input type="text"><span class="camera-img"></span>
+                            </div>                      
+                        </li>
+                        <li class="hero-list-item">
+                            <label for=""></label>
+                            <div class="input-holder">
+                                <input type="text" class="box-img"><span class="trash-img"></span>
+                            </div> 
+                        </li>
+                    </ul>    
+            </section> 
+            <section class="main">
+                <ul class="main-list">              
+                    <li class="main-list-item">
+                        <label for="name">Name</label>
+                        <div class="input-holder">
+                            <input type="text" id="name">
+                        </div> 
+                    </li>
+                    <li class="main-list-item">
+                        <label for="email">E-mail</label>
+                        <div class="input-holder">
+                            <input type="email" id="email">
+                        </div> 
+                    </li>
+                    <li class="main-list-item">
+                        <label for="country">Country</label>
+                        <div class="input-holder">
+                            <select name="select"> 
+                                <option value="value1">Select</option>
+                                <option value="value1">Ukraine</option>
+                                <option value="value2">Great Britain</option>
+                                <option value="value4">Portugal</option>
+                            </select>
+                        </div> 
+                    </li>
+                    <li class="main-list-item">
+                        <label for="city">City</label>                   
+                        <div class="input-holder">
+                            <input type="text" id="city">
+                        </div> 
+                    </li>
+                    <li class="main-list-item">
+                        <label for="zip">Zip Code</label>
+                        <div class="input-holder">
+                            <input id="zip" name="zip" type="text" inputmode="numeric" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$">
+                        </div>                 
+                    </li>
+                    <li class="main-list-item">
+                        <label for="phone">Phone Number</label>
+                        <div class="input-holder">
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                        </div> 
+                        <li class="main-list-item">
+                            <label for=""></label>
+                            <div class="input-holder">
+                                <input type="text">
+                            </div> 
+                        </li>
+                    </li>
+                </ul>
+            </section>    
+        </form>
+    </div>
+    
+</body>
+</html>

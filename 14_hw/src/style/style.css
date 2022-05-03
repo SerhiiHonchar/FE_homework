@@ -1,0 +1,146 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    transition: all 0.1s ease-in;
+}
+
+li,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+img {
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+label {
+    display: block;
+    padding-bottom: 7px;
+    color: #545454;
+}
+
+select {
+    color: #545454;
+    width: 245px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.container {
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #1C1C1C;
+}
+
+.form {
+    max-width: 640px;
+}
+
+.input-holder {
+    margin-bottom: 20px;
+}
+
+.input-holder input {
+    border: 1px solid grey;
+    width: 245px;
+    height: 30px;
+    border-radius: 5px;
+} 
+
+.camera-box input {
+    border: 1px solid grey;
+    width: 138px;
+    height: 30px;
+    border-radius: 5px;
+} 
+
+.hero-list-item,
+.main-list-item {
+    margin: 0 10px;
+}
+
+.hero-list-item,
+.main-list-item label:focus {
+    content: '';
+    color: #007BFF;
+}
+
+.main-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    margin-left: 10px;
+}
+
+.main {
+    position: relative;
+    top: -50px;
+    left: -20px;
+    
+}
+
+.hero-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    position: relative;
+    top: -90px;
+    left: 80px;
+} 
+
+.trash-img {
+    background: url(/src/img/trash.svg);
+    width: 16px;
+    height:16px;
+    display: block;
+    float: left;
+    position: relative;
+    top: 16px;
+    left: -23px;
+}
+
+.input-holder .box-img {
+    max-width: 30px;
+    position: relative;
+    top: 9px;
+    left: -46px;
+}
+
+.camera-img {
+    background: url(/src/img/camera.svg);
+    width: 16px;
+    height:16px;
+    display: block;
+    float: right;
+    position: relative;
+    top: 7px;
+    left: -22px;
+}
+
+.img-info {
+    display: block;
+    position: relative;
+    width: 154px;
+    top: 65px;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+
+

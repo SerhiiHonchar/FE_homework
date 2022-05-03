@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('inter-variablefont_slntwght-webfont.woff2') format('woff2'),
+         url('inter-variablefont_slntwght-webfont.woff') format('woff'),
+         url('inter-variablefont_slntwght-webfont.ttf') format('truetype'),
+         url('inter-variablefont_slntwght-webfont.svg#interregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+}
