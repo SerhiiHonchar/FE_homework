@@ -10,45 +10,38 @@
 </head>
 <body>
     <div class="container">
+        <h1 class="title">Profile</h1>
         <form action="#" class="form">
-            <section class="hero">
-                <h1 class="title">Profile</h1>
-                    <div class="img-profile">
-                        <img src="src/img/image.jpg" alt="">
-                    </div>
-                    <ul class="hero-list">
-                        <li class="hero-list-item">
-                            <label for="" class="img-info">Up to 1 MB (300x300 px)</label>
-                            <div class="input-holder camera-box">
-                                <input type="text"><span class="camera-img"></span>
-                            </div>                      
-                        </li>
-                        <li class="hero-list-item">
-                            <label for=""></label>
-                            <div class="input-holder">
-                                <input type="text" class="box-img"><span class="trash-img"></span>
-                            </div> 
-                        </li>
-                    </ul>    
-            </section> 
-            <section class="main">
+            <div class="hero">
+                        <div class="img-profile">
+                            <a href="#"><img src="./src/img/image.jpg" alt="User Picture"></a>
+                        </div>
+                            <div class="column right-column">
+                                <span class="custom-file-upload"></span>
+                                <span class="trash"></span>
+                                <input class="file-upload" type="file" name="file" id="file">
+                                <label class="file-label" for="file">Up to 1 MB (300x300 px)
+                                </label>
+                            </div>
+            </div> 
+            <div class="main">
                 <ul class="main-list">              
                     <li class="main-list-item">
-                        <label for="name">Name</label>
+                        <label class="label" for="name">Name</label>
                         <div class="input-holder">
-                            <input type="text" id="name">
+                            <input class="input" type="text" name="name" id="name" autofocus>
                         </div> 
                     </li>
                     <li class="main-list-item">
-                        <label for="email">E-mail</label>
+                        <label class="label" for="email">E-mail</label>
                         <div class="input-holder">
-                            <input type="email" id="email">
+                            <input class="input" type="email" name="email" id="email">
                         </div> 
                     </li>
                     <li class="main-list-item">
-                        <label for="country">Country</label>
+                        <label class="label" for="country">Country</label>
                         <div class="input-holder">
-                            <select name="select"> 
+                            <select class="input-select" name="country" id="country">
                                 <option value="value1">Select</option>
                                 <option value="value1">Ukraine</option>
                                 <option value="value2">Great Britain</option>
@@ -57,31 +50,31 @@
                         </div> 
                     </li>
                     <li class="main-list-item">
-                        <label for="city">City</label>                   
+                        <label class="label" for="city">City</label>                 
                         <div class="input-holder">
-                            <input type="text" id="city">
+                            <input class="input city" type="text" name="city" id="city">
                         </div> 
                     </li>
                     <li class="main-list-item">
-                        <label for="zip">Zip Code</label>
+                        <label class="label" for="name">Zip Code</label>
                         <div class="input-holder">
                             <input id="zip" name="zip" type="text" inputmode="numeric" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$">
                         </div>                 
                     </li>
                     <li class="main-list-item">
-                        <label for="phone">Phone Number</label>
+                        <label class="label" for="tel">Phone Number</label>
                         <div class="input-holder">
                             <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
                         </div> 
-                        <li class="main-list-item">
-                            <label for=""></label>
-                            <div class="input-holder">
-                                <input type="text">
-                            </div> 
-                        </li>
+                    </li>
+                    <li class="main-list-item">
+                        <label for="submit"></label>
+                        <div class="input-holder">
+                            <input type="button" id="button" name="submit" class="button">
+                        </div> 
                     </li>
                 </ul>
-            </section>    
+            </div>    
         </form>
     </div>
     
