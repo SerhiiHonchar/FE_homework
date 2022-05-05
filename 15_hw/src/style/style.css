@@ -86,6 +86,12 @@ a {
     padding: 14px 12px;
 }
 
+.img-list:hover,
+.holder-link:hover {
+    background:#3DB370;
+    border-radius: 5px;
+}
+
 .title {
     padding: 0 41px 14px;
     font-size: 24px;
