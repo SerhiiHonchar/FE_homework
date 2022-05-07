@@ -45,13 +45,16 @@ a {
     margin: 0 auto;
 }
 
-.line {
-    border-bottom: 1px solid #EFEEF3;;
-    display: block;
+.header .container {
+    border-bottom: 1px solid #EFEEF3;
 }
 
 .header-logo {
     margin: 38px 0 45px;
+}
+
+.main-section {
+    padding-top: 55px;
 }
 
 .list {
@@ -64,51 +67,55 @@ a {
 }
 
 .list-item {
-    width: 30%;
+    width: 33%;
+    max-width: 360px;
+}
+
+.content-holder {
     background: #FFFFFF;
     border: 1px solid #E5EAF4;
     border-radius: 8px;
+    padding: 41px;
 }
 
-.list-item:nth-child(2) {
-    margin: 0 39px;
-    background: #FFFFFF;
-    border: 1px solid #3DB370;
-}
-
-.img-holder {
-    padding: 41px 41px 28px;
+.svg-holder {
+    width: 64px;
+    height: 64px;
+    border: 1px solid rgba(21, 101, 216, 0.1);
+    border-radius: 16px;
+    margin-bottom: 28px;
+    position: relative;
 }
 
 .img-list {
-    border: 1px solid rgba(21, 101, 216, 0.1);
-    border-radius: 16px;
-    padding: 14px 12px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.img-list:hover,
-.holder-link:hover {
-    background:#3DB370;
-    border-radius: 5px;
+.content-holder:hover {
+    border-color: #3DB370;
+}
+
+.svg-holder:hover {
+    border-color: #3DB370;
+}
+
+.svg-holder:hover .last-path {
+    fill: #3DB370;
 }
 
 .title {
-    padding: 0 41px 14px;
+    margin-bottom: 14px;
     font-size: 24px;
+    font-weight: 400;
     line-height: 21px;  
 }
 
 .text-holder {
-    padding: 0 41px 29px;
+    margin-bottom: 29px;
     line-height: 28px;
-}
-
-.main-list-link {
-    padding-left: 41px;
-}
-
-.info-holder {
-    margin-bottom: 46px;
 }
 
 .main-title {
@@ -122,7 +129,7 @@ a {
 .description {
     line-height: 21px;
     color: #7690A8;
-    margin: 55px 0 17px;
+    margin-bottom: 17px;
 }
 
 .footer .container{
@@ -157,6 +164,10 @@ a {
     background-repeat: no-repeat;
 }
 
+.svg-sprite:hover {
+    border-color: #3DB370;
+}
+
 .svg-sprite.facebook {
     background-position: -13px -17px;
 }
@@ -172,9 +183,6 @@ a {
 .svg-sprite.behance {
     background-position: -206px -78px;
 }
-.behance:hover {
-    fill: #ace63c; 
-  }
 
 .svg-sprite.vimeo {
     background-position: -78px -81px;
