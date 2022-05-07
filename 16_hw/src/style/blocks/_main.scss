@@ -1,0 +1,31 @@
+.main-section {
+    padding-top: 55px;
+
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 69px;
+        color: $dark-blue;
+    }
+        
+    .list-item {
+        width: 33%;
+        max-width: 360px;
+    }
+
+    .description {
+        line-height: 21px;
+        color: $grey;
+        margin-bottom: 17px;
+    }
+
+    .main-title {
+        font-family: $title-font;
+        font-size: 40px;
+        line-height: 52px;
+        margin-bottom: 35px;
+        color: $dark-blue;
+    }
+}

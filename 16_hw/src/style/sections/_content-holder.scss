@@ -1,0 +1,29 @@
+.content-holder {
+    background: #FFFFFF;
+    border: 1px solid #E5EAF4;
+    border-radius: 8px;
+    padding: 41px;
+
+    &:hover {
+        border-color: $light-green;
+    }
+
+    .img-list {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .title {
+        margin-bottom: 14px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 21px;  
+    }
+
+    .text-holder {
+        margin-bottom: 29px;
+        line-height: 28px;
+    }
+}

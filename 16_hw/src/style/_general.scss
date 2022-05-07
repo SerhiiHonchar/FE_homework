@@ -1,0 +1,46 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: $font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p,
+span,
+img {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #16133D;
+}
+
+.container {
+    width: 100%;
+    max-width: 1155px;
+    margin: 0 auto;
+}
