@@ -1,0 +1,23 @@
+.svg-holder {
+    width: 64px;
+    height: 64px;
+    border: 1px solid rgba(21, 101, 216, 0.1);
+    border-radius: 16px;
+    margin-bottom: 28px;
+    position: relative;
+
+    &:hover {
+        border-color: $light-green;
+    }
+
+    &:hover .last-path {
+        fill: $light-green;
+    }
+
+    .img-list {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

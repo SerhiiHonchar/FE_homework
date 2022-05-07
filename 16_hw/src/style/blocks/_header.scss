@@ -1,0 +1,16 @@
+.container {
+    width: 100%;
+    max-width: 1155px;
+    margin: 0 auto;
+}
+
+.header {
+
+    .container {
+        border-bottom: 1px solid $white;
+    }
+
+    .header-logo {
+        padding: 38px 0 45px;
+    }
+}
