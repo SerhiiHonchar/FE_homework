@@ -11,13 +11,13 @@
 }    
 
 .svg-sprite {
-border: 1px solid $white;
-border-radius: 5px;
-display: inline-block;
-background-image: url(../img/icon-sprites.jpeg);
-width: 38px;
-height: 38px;
-background-repeat: no-repeat;
+    border: 1px solid $white;
+    border-radius: 5px;
+    display: inline-block;
+    background-image: url("../img/icon-sprites.jpeg");
+    width: 38px;
+    height: 38px;
+    background-repeat: no-repeat;
 
     &:hover {
         border-color: $light-green;
