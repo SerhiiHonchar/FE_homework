@@ -19,6 +19,7 @@
     @include media ('>=768px') {
         width: 50%;
         max-width: 486px;
+        padding-right: 30px;
     }
 
     .design-text-holder {

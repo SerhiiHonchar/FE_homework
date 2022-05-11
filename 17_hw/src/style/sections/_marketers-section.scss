@@ -21,11 +21,12 @@
     @include media ('>=768px') {
         width: 50%;
         max-width: 486px;
+        padding-right: 30px;
     }
 
-    .marketers-text-holder {
-        @extend .text;
-    }
+        .marketers-text-holder {
+            @extend .text;
+        }
 }  
 
 .marketers-list-item {

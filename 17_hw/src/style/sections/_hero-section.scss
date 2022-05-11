@@ -18,12 +18,11 @@
 
     &.hero-img {
         padding-top: 20px;
-        width: 50%;
+        width: 100%;
     }
 
     @include media ('>=768px') {
-        width: 50%;
-        max-width: 518px;
+        max-width: 50%;
     }
 
         .hero_title {
