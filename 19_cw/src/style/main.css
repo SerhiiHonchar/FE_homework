@@ -1,0 +1,507 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("roboto-regular-webfont.woff2") format("woff2"), url("roboto-regular-webfont.woff") format("woff"), url("roboto-regular-webfont.ttf") format("truetype"), url("roboto-regular-webfont.svg#robotoregular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+/* mixin usage */
+/*--------------------------------
+	Responsive ratio
+	Used for creating scalable elements that maintain the same ratio
+	example:
+	.element {
+		@include responsive-ratio(400, 300);
+	}
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+.container {
+  max-width: 100%;
+  max-width: 1152px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.search-button {
+  opacity: 1;
+  border: 0;
+  background-color: transparent;
+}
+
+.text-holder, .column-title {
+  color: #565656;
+  font-size: 19px;
+  line-height: 32px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+.h2-title, .design-title, .sketches-title, .research-title, .project-title {
+  font-size: 23px;
+  line-height: 38px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+.description, .title-description {
+  font-size: 19px;
+  line-height: 32px;
+  color: #565656;
+}
+
+.picture,
+.img-section {
+  margin-bottom: 50px;
+}
+
+.header {
+  padding: 25px 0;
+}
+@media (min-width: 1024px) {
+  .header {
+    padding: 35px 0;
+  }
+}
+.header.active .nav-holder {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.header.active .nav-opener span {
+  opacity: 0;
+  visibility: hidden;
+}
+.header.active .nav-opener:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 7px;
+}
+.header.active .nav-opener:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  bottom: 5px;
+}
+.header .container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.nav-holder {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(42%, white), color-stop(53%, rgba(255, 255, 255, 0.81)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to bottom, white 42%, rgba(255, 255, 255, 0.81) 53%, rgba(255, 255, 255, 0) 100%);
+  height: 100vh;
+  z-index: 1;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+@media (min-width: 768px) {
+  .nav-holder {
+    opacity: 1;
+    visibility: visible;
+    position: static;
+    padding: 0;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    padding-bottom: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .nav-holder .nav {
+    margin-right: 50px;
+  }
+}
+.nav-holder .nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .nav-holder .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+  }
+}
+.nav-holder .nav-item {
+  margin: 0 0 20px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .nav-holder .nav-item {
+    margin: 0;
+    padding: 0 10px;
+  }
+}
+.nav-holder .nav-link {
+  color: #000000;
+  font-size: 13px;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+.nav-holder .nav-link:hover {
+  text-decoration: underline;
+}
+
+.nav-opener {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  z-index: 2;
+  width: 24px;
+  height: 14px;
+}
+@media (min-width: 768px) {
+  .nav-opener {
+    display: none;
+  }
+}
+.nav-opener:before, .nav-opener:after,
+.nav-opener span {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 2px;
+  background-color: black;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+.nav-opener:before {
+  top: 0;
+}
+.nav-opener:after {
+  bottom: 0;
+}
+.nav-opener span {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.btn-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.btn-holder .search-button {
+  margin-right: 8px;
+}
+
+.hero-section .container {
+  margin-bottom: 48px;
+}
+@media (min-width: 768px) {
+  .hero-section .container {
+    margin-bottom: 130px;
+  }
+}
+.hero-section .container .pseudo-title {
+  font-size: 16px;
+  line-height: 22px;
+  padding: 39px 0;
+  text-transform: uppercase;
+  display: block;
+  letter-spacing: 0.5em;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .hero-section .container .pseudo-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.hero-section .container .main-title {
+  font-size: 33px;
+  line-height: 50px;
+  margin-bottom: 52px;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .hero-section .container .main-title {
+    font-size: 48px;
+    line-height: 64px;
+    margin-bottom: 64px;
+  }
+}
+
+.project .container {
+  margin-bottom: 71px;
+}
+@media (min-width: 768px) {
+  .project .container {
+    margin-bottom: 135px;
+  }
+}
+
+.project-column {
+  width: 100%;
+  max-width: 544px;
+}
+@media (min-width: 768px) {
+  .project-column {
+    width: 50%;
+    float: left;
+  }
+}
+
+.project-title {
+  margin-bottom: 40px;
+}
+
+.text-holder p, .column-title p {
+  margin-bottom: 41px;
+}
+
+.project-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 23px 0;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .project-list-item {
+    margin: 0 195px;
+  }
+}
+
+.column-title {
+  color: #000000;
+  letter-spacing: 0.1em;
+}
+
+.title-description {
+  letter-spacing: 0.05em;
+}
+
+.research .container {
+  margin-bottom: 71px;
+}
+@media (min-width: 768px) {
+  .research .container {
+    margin-bottom: 135px;
+  }
+}
+
+.research-title {
+  margin-bottom: 40px;
+}
+
+.text-holder p, .column-title p {
+  margin-bottom: 41px;
+}
+
+.sketches .container {
+  margin-bottom: 71px;
+}
+@media (min-width: 768px) {
+  .sketches .container {
+    margin-bottom: 135px;
+  }
+}
+
+.sketches-title {
+  margin-bottom: 40px;
+}
+
+.text-holder p, .column-title p {
+  margin-bottom: 41px;
+}
+
+.design .container {
+  margin-bottom: 71px;
+}
+@media (min-width: 768px) {
+  .design .container {
+    margin-bottom: 135px;
+  }
+}
+
+.design-title {
+  margin-bottom: 40px;
+}
+
+.text-holder p, .column-title p {
+  margin-bottom: 41px;
+}
+
+.footer-section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 35px;
+}
+@media (min-width: 500px) {
+  .footer-section .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 35px;
+  }
+}
+@media (min-width: 768px) {
+  .footer-section .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 100px;
+  }
+}
+.footer-section .container .footer-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 7px 0;
+  color: #000000;
+  letter-spacing: 0.1em;
+}
+.footer-section .container .footer-list-item .footer-list {
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .footer-section .container .footer-list-item .footer-list {
+    margin: 0 30px;
+  }
+}
+.footer-section .container .footer-sm-link,
+.footer-section .container .mail {
+  color: #000000;
+  margin-bottom: 15px;
+}
+.footer-section .container .footer-info {
+  padding-bottom: 33px;
+}
+.footer-section .container .footer-info .question {
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 50px;
+  letter-spacing: 0.05em;
+}
+@media (min-width: 768px) {
+  .footer-section .container .footer-info .question {
+    font-size: 48px;
+    line-height: 64px;
+  }
+}
+.footer-section .container .footer-info .phone {
+  padding: 34px 0 17px;
+  display: block;
+}
+.footer-section .container .footer-copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  padding-top: 26px;
+  margin-bottom: 30px;
+  max-width: 208px;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+}
+/*# sourceMappingURL=main.css.map */

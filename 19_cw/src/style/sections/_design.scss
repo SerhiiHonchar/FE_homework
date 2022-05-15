@@ -1,0 +1,20 @@
+.design {
+    .container {
+        margin-bottom: 71px;
+
+        @include media ('>=768px') {
+            margin-bottom: 135px;
+        }
+    }
+}
+
+.design-title {
+    @extend .h2-title;
+    margin-bottom: 40px;
+}
+
+.text-holder {
+    p {
+    margin-bottom: 41px;
+    }
+}
