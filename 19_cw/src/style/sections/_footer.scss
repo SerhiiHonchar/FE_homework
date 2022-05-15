@@ -1,0 +1,75 @@
+.footer-section {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 35px;
+
+            @include media ('>=500px') {
+                flex-direction: row;
+                margin-bottom: 35px;
+            }
+
+            @include media ('>=768px') {
+                flex-direction: row;
+                margin-bottom: 100px;
+            }
+
+        .footer-list-item {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            padding: 7px 0;
+            color: $black;
+            letter-spacing: 0.1em;
+        
+            .footer-list {
+                margin: 0;
+        
+                @include media ('>=768px') {
+                    margin: 0 30px;
+                }
+            }
+        }
+            
+        .footer-sm-link,
+        .mail {
+            color: $black;
+            margin-bottom: 15px;
+        }
+        
+        .footer-info {
+            padding-bottom: 33px;
+        
+            .question {
+                font-weight: 400;
+                font-size: 33px;
+                line-height: 50px;
+                letter-spacing: 0.05em;
+            
+                @include media ('>=768px') {
+                    font-size: 48px;
+                    line-height: 64px;
+                }
+            }
+            
+                .phone {
+                    padding: 34px 0 17px;
+                    display: block;
+                }
+            }
+            
+            .footer-copyright {
+                display: flex;
+                flex-wrap: wrap;
+                align-content: flex-end;
+                padding-top: 26px;
+                margin-bottom: 30px;
+                max-width: 208px;
+                font-size: 12px;
+                line-height: 20px;
+                letter-spacing: 0.1em;
+            }
+    }
+}

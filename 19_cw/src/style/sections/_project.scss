@@ -1,0 +1,53 @@
+.project {
+    .container {
+        margin-bottom: 71px;
+
+        @include media ('>=768px') {
+            margin-bottom: 135px;
+        }
+    }
+}
+
+.project-column {
+    width: 100%;
+    max-width: 544px;
+
+    @include media ('>=768px') {
+        width: 50%;
+        float: left;
+    }
+}
+
+.project-title {
+    margin-bottom: 40px;
+    @extend .h2-title;
+}
+
+.text-holder {
+    p {
+    margin-bottom: 41px;
+    }
+}
+
+.project-list-item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 23px 0;
+    margin: 0;
+
+    @include media ('>=768px') {
+        margin: 0 195px;
+    }
+}
+
+.column-title {
+    @extend .text-holder;
+    color: $black;
+    letter-spacing: 0.1em;
+}
+
+.title-description {
+    @extend .description;
+    letter-spacing: 0.05em;
+}
