@@ -1,0 +1,144 @@
+.hero-section {
+
+    .container {
+        text-align: center;
+        padding: 132px 15px 50px;
+
+
+        @include media ('>=768px') {
+            padding: 264px 15px 132px;
+        }
+
+        .hero-title {
+            font-size: 26px;
+            line-height: 18px;
+            letter-spacing: 4.8px;
+            text-transform: uppercase;
+            color: $white;
+            margin-bottom: 10px;
+
+            @include media ('>=768px') {
+                font-size: 48px;
+                line-height: 26px;
+            }
+        }
+
+        .pseudo-title {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 14px;
+            letter-spacing: 6.82px;
+            color: $white;
+            padding-bottom: 20px;
+            display: block;
+
+            @include media ('>=768px') {
+                font-size: 22px;
+                line-height: 26px;
+                padding-bottom: 48px;
+            }
+        }
+    }
+}
+
+.search-form {
+    position: relative;
+    max-width: 350px;
+    margin: 0 auto;
+    background-color: $white;
+    margin-bottom: 56px;
+    resize: none;
+
+    @include media ('>=768px') {
+        max-width: 653px;
+        margin-bottom: 108px;
+    }
+
+    .search-input {
+        position: absolute;
+        text-align: center;
+        top: 0;
+        left: 0;
+        border: none;
+        width: 100%;
+        max-width: 503px;
+        height: 30px;
+        color: $grey;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.8px;
+        text-align: start;
+        padding-left: 5px;
+        z-index: 1;
+
+        &:focus {
+            outline: none;
+        }
+
+        @include media ('>=768px') {
+            height: 63px;
+            font-size: 14px;
+            line-height: 26px; 
+            text-align: center;
+            letter-spacing: 2.8px;
+        }
+    }
+
+    .search-btn {
+        border: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: 153px;
+        height: 30px;
+        color: $white;
+        background-color: $blue;
+        border: 2px solid $white;
+        font-family: $aleo;
+        font-size: 12px;
+        line-height: 22px;
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+        z-index: 1;
+
+        @include media ('>=768px') {
+            width: 153px;
+            height: 63px;
+            font-size: 14px;
+            line-height: 26px;
+        }
+
+        &:hover {
+            color: $hover-color;
+        }
+
+        i { 
+            @include media ('>=768px') {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.scroll-button {
+    max-width: 108px;
+    margin: 0 auto;
+}
+
+.scroll {
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 2.8px;
+    color: $white;
+    text-decoration: none;
+    
+    @include media ('>=768px') {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    &:hover {
+        color: $hover-color;
+    }
+}

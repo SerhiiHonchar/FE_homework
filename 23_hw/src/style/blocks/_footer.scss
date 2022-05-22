@@ -1,0 +1,65 @@
+.footer {
+    background-color: $brown;
+    background-size: cover;
+
+    .container {
+        text-align: center;
+        padding: 40px 15px 30px;
+
+        @include media ('>=768px') {
+            padding: 35px 15px;
+        }
+
+        @include media ('>=1024px') {
+            padding: 120px 15px 25px;
+        }
+    }
+
+    .footer-img-holder {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 8px;
+    }
+
+    .slogan-company {
+        font-family: $aleo;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 1.6px;
+        color: $white;
+        padding-bottom: 20px;
+        margin-left: 10px;
+        display: inline-block;
+
+        @include media ('>=768px') {
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+
+    .social-media-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        transition: all ease-in-out 0.3s;
+        
+        .social-media-list-item {
+            font-size: 16px;
+            display: inline-block;
+            padding-right: 10px;
+
+            &:last-of-type {
+                padding-right: 0;
+            }
+
+            .social-media-link {
+                color: $white;
+
+                &:hover {
+                    color: $blue;
+                }
+            }  
+        }
+    }
+}

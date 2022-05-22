@@ -1,0 +1,85 @@
+.spain-first-section {
+    padding: 50px 15px;
+
+    @include media ('>=768px') {
+        padding: 100px 15px;
+    }
+
+    @include media ('>=1024px') {
+        padding: 227px 15px 99px;
+    }
+}
+
+.spain-first {
+    max-width: 540px;
+    background-color: $brown;
+    padding: 0 15px;
+    text-align: center;
+    opacity: 0.9;
+
+    @include media ('>=768px') {
+        padding: 0 32px;
+        text-align: start;
+    }
+
+    .spain-pseudo {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 1.5px;
+        color: $light-grey;
+        padding: 20px 0;
+        display: block;
+
+        @include media ('>=768px') {
+            font-size: 20px;
+            line-height: 26px;
+            padding: 47px 0 23px;
+        }
+    }
+
+    .spain-title {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: $white;
+        padding-bottom: 13px;
+
+        @include media ('>=768px') {
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+
+    .text-holder {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: $light-grey;
+        padding-bottom: 25px;
+        text-align: justify;
+        max-width: 508px;
+
+        @include media ('>=768px') {
+            font-size: 16px;
+            line-height: 26px;
+            padding-bottom: 46px;
+        }
+    }
+}
+
+.book-now {
+    @extend .button-holder; 
+    margin: 0 auto;
+    padding-bottom: 50px;
+
+    @include media ('>=768px') {
+        margin: 0;
+        padding-bottom: 70px;
+    }
+    
+    .book-button {
+        @extend .btn;
+    }
+}
