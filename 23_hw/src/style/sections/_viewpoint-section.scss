@@ -1,12 +1,12 @@
 .viewpoint-section {
-    padding: 40px 15px 30px;
+    padding: 40px 0 30px;
 
     @include media ('>=768px') {
-        padding: 50px 15px;
+        padding: 50px 0;
     }
 
     @include media ('>=1024px') {
-        padding: 128px 15px 99px;
+        padding: 128px 0 99px;
     } 
 
     .viewpoint-title {

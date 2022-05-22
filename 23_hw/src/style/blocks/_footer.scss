@@ -4,14 +4,14 @@
 
     .container {
         text-align: center;
-        padding: 40px 15px 30px;
+        padding: 40px 0 30px;
 
         @include media ('>=768px') {
-            padding: 35px 15px;
+            padding: 35px 0;
         }
 
         @include media ('>=1024px') {
-            padding: 120px 15px 25px;
+            padding: 120px 0 25px;
         }
     }
 

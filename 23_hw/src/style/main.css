@@ -330,29 +330,22 @@ a {
 }
 @media (min-width: 768px) {
   .search-form {
-    max-width: 653px;
+    max-width: 650px;
     margin-bottom: 108px;
   }
 }
 .search-form .search-input {
-  position: absolute;
-  text-align: center;
   top: 0;
   left: 0;
   border: none;
-  width: 100%;
-  max-width: 503px;
+  min-width: 100%;
   height: 30px;
   color: #999999;
   font-size: 12px;
   line-height: 20px;
   letter-spacing: 0.8px;
-  text-align: start;
-  padding-left: 5px;
+  padding: 0 20px;
   z-index: 1;
-}
-.search-form .search-input:focus {
-  outline: none;
 }
 @media (min-width: 768px) {
   .search-form .search-input {
@@ -791,16 +784,16 @@ a {
 }
 
 .spain-first-section {
-  padding: 50px 15px;
+  padding: 50px 0;
 }
 @media (min-width: 768px) {
   .spain-first-section {
-    padding: 100px 15px;
+    padding: 100px 0;
   }
 }
 @media (min-width: 1024px) {
   .spain-first-section {
-    padding: 227px 15px 99px;
+    padding: 227px 0 99px;
   }
 }
 
@@ -875,16 +868,16 @@ a {
   }
 }
 .spain-second-section {
-  padding: 50px 15px;
+  padding: 50px 0;
 }
 @media (min-width: 768px) {
   .spain-second-section {
-    padding: 100px 15px;
+    padding: 100px 105px;
   }
 }
 @media (min-width: 1024px) {
   .spain-second-section {
-    padding: 227px 15px 99px;
+    padding: 227px 0 99px;
   }
 }
 .spain-second-section .container {
@@ -969,16 +962,16 @@ a {
   }
 }
 .viewpoint-section {
-  padding: 40px 15px 30px;
+  padding: 40px 0 30px;
 }
 @media (min-width: 768px) {
   .viewpoint-section {
-    padding: 50px 15px;
+    padding: 50px 0;
   }
 }
 @media (min-width: 1024px) {
   .viewpoint-section {
-    padding: 128px 15px 99px;
+    padding: 128px 0 99px;
   }
 }
 .viewpoint-section .viewpoint-title {
@@ -1053,6 +1046,7 @@ a {
   font-size: 16px;
   line-height: 26px;
   color: #E8E8E8;
+  font-family: "Font Awesome";
 }
 @media (min-width: 768px) {
   .viewpoint-section .blockquote .left-column-tourist .quote-holder {
@@ -1077,16 +1071,16 @@ a {
 }
 .footer .container {
   text-align: center;
-  padding: 40px 15px 30px;
+  padding: 40px 0 30px;
 }
 @media (min-width: 768px) {
   .footer .container {
-    padding: 35px 15px;
+    padding: 35px 0;
   }
 }
 @media (min-width: 1024px) {
   .footer .container {
-    padding: 120px 15px 25px;
+    padding: 120px 0 25px;
   }
 }
 .footer .footer-img-holder {

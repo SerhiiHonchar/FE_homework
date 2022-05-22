@@ -1,12 +1,12 @@
 .spain-second-section {
-    padding: 50px 15px;
+    padding: 50px 0;
 
     @include media ('>=768px') {
-        padding: 100px 15px;
+        padding: 100px 105px;
     }
 
     @include media ('>=1024px') {
-        padding: 227px 15px 99px;
+        padding: 227px 0 99px;
     }
 
     .container{
