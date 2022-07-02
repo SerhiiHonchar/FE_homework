@@ -1,0 +1,70 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    max-width: 230px;
+    max-height: 280px;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+position: relative;
+}
+
+.container img {
+    position: absolute;
+}
+
+.top {
+    animation-name: rotate,fade;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: normal;
+    
+}
+
+.bottom {
+animation-name: rotate;
+animation-timing-function: ease;
+animation-iteration-count: infinite;
+animation-duration: 2s;
+animation-direction: normal;
+}
+
+@keyframes fade {
+0% {
+    opacity: 0;
+}
+
+50% {
+    opacity: 1;
+}
+
+100% {
+    opacity: 0;
+}
+}
+
+@keyframes rotate {
+0% {
+    transform: rotateY(0deg);
+}
+50% {
+    transform: rotateY(-180deg);
+}
+100% {
+    transform: rotateY(0deg);
+}
+} 
